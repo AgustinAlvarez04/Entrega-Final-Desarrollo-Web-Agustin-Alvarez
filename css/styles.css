@@ -3,13 +3,13 @@
 /* selector universal */
 *{
     font-family: 'Edu NSW ACT Foundation', cursive;
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
 }
 
 /* selectores de etiqueta */
 body{
-    background-image: url(../img/headers/fondo1.jpg);
+    background-image: url(../img/headers/fondo2.jpg);
     
 }
 
@@ -37,19 +37,39 @@ h3{
 /* selectores descendentes */
 nav{
     background-color: rgba(0, 0, 0, 0.63);
+    padding: 10px 60px;
+    height: auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
     nav ul{
         list-style: none;
+        display: inline-block;
     }
-        nav ul li a{
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            font-family: 'Edu NSW ACT Foundation', cursive;
-            font-weight: 400;
-            line-height: 2;
-            
-            
+        nav ul li{
+            /* display */
+            display: inline-block;
+            /* margin */
+            margin: 10 px;
         }
+            nav ul li a{
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                font-family: 'Edu NSW ACT Foundation', cursive;
+                font-weight: 400;
+                line-height: 2;
+            }
+                nav ul li a:hover{
+                    text-decoration: underline;
+                }
+
+
+body nav a img{
+    width: 10%;
+    height: auto;
+}
 
 /* selector de grupo */
 h1,
@@ -83,15 +103,18 @@ h3{
 }
 
 #contacto{
+    background-color: rgba(0, 0, 0, 0.63);
     color: rgb(255, 255, 255);
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     line-height: 2;
+
 }
 
 #menu{
+        background-color: rgba(0, 0, 0, 0.63);    
         color: rgb(255, 255, 255);
         font-weight: 300;
         font-size: 18px;
@@ -104,5 +127,32 @@ h3{
     text-align: center;
 }
 
-
+.contenedor{
+        background-color: rgba(238, 187, 247, .7);
+        /* box model */
+        /* ancho */
+        width: 90%; 
+        /* alto  */
+        height:auto;
+        /* margen  */
+        /* cuatro lados iguales */
+        /* margin: 20px; */
+        /* margin-top: 10px;
+        margin-bottom: 50px;
+        margin-left: 70px;
+        margin-right: 60px; */
+        /* orden como el reloj */
+        /* margin: 10px 20px 30px 10px; */
+        /* dos ejes, vertical y horizontal */
+        margin: 30px auto;
+        /* relleno  */
+        /* padding: 50px; */
+        /* padding-top: 30px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px; */
+        padding: 50px 30px;
+        /* bordes  */
+        border-top: dotted 3px deeppink;
+}
 
