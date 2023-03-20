@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
+/* selector universal */
+*{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    /* margin: 0;
+    padding: 0; */
+}
+
+/* selectores de etiqueta */
+body{
+    background-image: url(../img/headers/fondo1.jpg);
+    
+}
+
+
+
+p{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+/* selectores descendentes */
+nav{
+    background-color: rgba(0, 0, 0, 0.63);
+}
+    nav ul{
+        list-style: none;
+    }
+        nav ul li a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-family: 'Edu NSW ACT Foundation', cursive;
+            font-weight: 400;
+            line-height: 2;
+            
+            
+        }
+
+/* selector de grupo */
+h1,
+h2,
+h3{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+
+/* selectores de clase */
+.texto-verde{
+    color: green;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+/* selectores de ID */
+#logo{
+    margin-left: 0%;
+}
+
+#contacto{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    line-height: 2;
+}
+
+#menu{
+        color: rgb(255, 255, 255);
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        line-height: 2;
+        text-align: center;
+}
+
+#presentacion{
+    text-align: center;
+}
+
+
+
