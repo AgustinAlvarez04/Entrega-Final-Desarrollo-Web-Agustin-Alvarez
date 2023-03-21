@@ -133,6 +133,12 @@ h3{
     text-align: center;
 }
 
+#intro{
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 10px 60px;
+    height: auto;
+}
+
 .contenedor{
         background-color: rgba(238, 187, 247, .7);
         /* box model */
