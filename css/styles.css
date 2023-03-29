@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
 
-/* selector universal */
 *{
     font-family: 'Edu NSW ACT Foundation', cursive;
     margin: 0;
     padding: 0;
 }
 
-/* selectores de etiqueta */
 body{
     background-image: url(../img/headers/fondo2.jpg);
-    
+    background-repeat: repeat;
+    background-position: relative;
+    background-size: initial;
 }
-
-
 
 p{
     color: rgb(255, 255, 255);
@@ -34,9 +32,9 @@ h3{
     font-size: 24px;
 }
 
-/* selectores descendentes */
 nav{
     background-color: rgba(0, 0, 0, 0.63);
+    background-position: 20%;
     padding: 10px 60px;
     height: auto;
     position: sticky;
@@ -49,9 +47,7 @@ nav{
         display: inline-block;
     }
         nav ul li{
-            /* display */
             display: inline-block;
-            /* margin */
             margin: 10 px;
         }
             nav ul li a{
@@ -77,7 +73,6 @@ body nav a img{
     height: auto;
 }
 
-/* selector de grupo */
 h1,
 h2,
 h3{
@@ -86,7 +81,6 @@ h3{
 }
 
 
-/* selectores de clase */
 .texto-verde{
     color: green;
 }
@@ -99,13 +93,10 @@ h3{
     text-align: right;
 }
 
-.text-italic{
-    font-style: italic;
-}
 
-/* selectores de ID */
 #logo{
     margin-left: 0%;
+
 }
 
 #contacto{
@@ -120,7 +111,7 @@ h3{
 }
 
 #menu{
-        background-color: rgba(0, 0, 0, 0.63);    
+        background-color: rgba(0, 0, 0, 0.63); 
         color: rgb(255, 255, 255);
         font-weight: 300;
         font-size: 18px;
@@ -130,7 +121,8 @@ h3{
 }
 
 #presentacion{
-    text-align: center;
+    line-height: 2;
+
 }
 
 #intro{
@@ -141,30 +133,22 @@ h3{
 
 .contenedor{
         background-color: rgba(238, 187, 247, .7);
-        /* box model */
-        /* ancho */
         width: 90%; 
-        /* alto  */
         height:auto;
-        /* margen  */
-        /* cuatro lados iguales */
-        /* margin: 20px; */
-        /* margin-top: 10px;
-        margin-bottom: 50px;
-        margin-left: 70px;
-        margin-right: 60px; */
-        /* orden como el reloj */
-        /* margin: 10px 20px 30px 10px; */
-        /* dos ejes, vertical y horizontal */
         margin: 30px auto;
-        /* relleno  */
-        /* padding: 50px; */
-        /* padding-top: 30px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px; */
         padding: 50px 30px;
-        /* bordes  */
         border-top: dotted 3px deeppink;
 }
 
+#contenedor{
+    width: 20%;
+    height: 200px;
+    border: solid 1px grey;
+    margin: auto;
+    position: relative;
+}
+    #contenedor div{
+        width: 70px;
+        height: 70px;
+        position: absolute;
+    }
