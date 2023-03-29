@@ -107,6 +107,7 @@ h3{
     line-height: 22px;
     text-align: center;
     line-height: 2;
+    
 
 }
 
@@ -129,15 +130,6 @@ h3{
     background-color: rgba(0, 0, 0, 0.63);
     padding: 10px 60px;
     height: auto;
-}
-
-.contenedor{
-        background-color: rgba(238, 187, 247, .7);
-        width: 90%; 
-        height:auto;
-        margin: 30px auto;
-        padding: 50px 30px;
-        border-top: dotted 3px deeppink;
 }
 
 #contenedor{
