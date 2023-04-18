@@ -161,11 +161,10 @@ footer{
     .contacto-grid{
         display: grid;
         grid-template-columns: 1;
-        grid-template-rows: 3;
+        grid-template-rows: 2;
         grid-area: 
         "header"
         "main"
-        "footer"
         ;
     }
         .contacto-grid .contacto-header{
@@ -183,17 +182,6 @@ footer{
             width: 400px;
             padding: 100px;
             border-radius: 4px;
-        }
-        .contacto-grid .contacto-footer{ 
-            grid-area: "footer";
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin-top: 10px;
-            width: 400px;
-            padding: 10px;
-            border-radius: 4px;
-            
         }
     
     nav{
@@ -222,34 +210,33 @@ footer{
             height: 30px;
             border-radius: 50px;
         }
-
-    .contacto-footer div{
-        font-size: 1.4em;
-    }
-    .contacto-footer img{
-        width: 40px;
-    }
     
     .header--img{
         display: grid;
-        grid-template-columns: 2;
-        grid-template-rows: 2;
+        grid-template-columns: 1;
+        grid-template-rows: 1;
         grid-area: 
         "pastas" "costilla"
-        "pizza" "empanadas"
         ;
     }
         .header--img .pastas{
             grid-area: "pastas";
             display: flex;
             flex-direction: column;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
+            
         }
 
+        .header--img .costilla{
+            grid-area: "costilla";
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
         .header--img .pizza,
-        .header--img .costilla,
         .header--img .empanadas{
             display: none;
         }
@@ -271,11 +258,6 @@ footer{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-
-    #button-index{
-        width: 10px;
-        height: 10px;
     }
 }
 
