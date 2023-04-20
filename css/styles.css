@@ -198,8 +198,8 @@ footer{
        grid-area: uno;
        display: flex;
        flex-direction: row;
-       align-items: center;
        justify-content: center;
+       
     }  
 
     .menu .plato1 p{
@@ -224,6 +224,7 @@ footer{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        padding-top: 30px;
     }
 
     .menu .plato3{
@@ -232,6 +233,7 @@ footer{
        flex-direction: row;
        align-items: center;
        justify-content: center;
+       padding-top: 50px;
     }
 
     .menu .plato4{
@@ -240,11 +242,16 @@ footer{
        flex-direction: row;
        align-items: center;
        justify-content: center;
+       padding-top: 70px;
     }
 
     .menu section{
         border-radius: 10px;
     }
+
+.footer-menu{
+    margin-top: 40px;
+}
 
 .header--img{
     display: grid;
@@ -282,8 +289,8 @@ footer{
 @media (width < 768px){
     .contacto-grid{
         display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: 4;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
         grid-template-areas:
         "nav"
         "header"
@@ -423,6 +430,81 @@ footer{
         align-items: center;
         line-height: 22px;
         line-height: 2;
+    }
+    .menu{
+        display: grid;
+        grid-template-columns:20% repeat(2,1fr);
+        grid-template-rows: 80px repeat(4,300px);
+        gap: 5px;
+        grid-template-areas:
+        "botones botones botones"
+        "uno uno uno"
+        "dos dos dos"
+        "tres tres tres"
+        "cuatro cuatro cuatro";
+    }
+        .menu .botones-menu{
+            grid-area: botones;
+        }
+        
+        .menu .section-menu{
+            display: none;
+        }
+    
+        .menu .plato1{
+           grid-area: uno;
+           display: flex;
+           flex-direction: row;
+           margin: 10px;
+           padding-bottom: 30px;     
+        }  
+    
+        .menu .plato1 p{
+            width: 50%;
+            margin-left: 50px;
+        }
+        .menu .plato2 p{
+            width: 50%;
+            margin-left: 50px;
+        }
+        .menu .plato3 p{
+            width: 50%;
+            margin-left: 50px;
+        }
+        .menu .plato4 p{
+            width: 50%;
+            margin-left: 50px;
+        }
+        .menu .plato2{
+            grid-area: dos;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            
+        }
+    
+        .menu .plato3{
+           grid-area: tres;
+           display: flex;
+           flex-direction: row;
+           margin: 10px;
+           padding-top: 30px; 
+        }
+    
+        .menu .plato4{
+           grid-area: cuatro;
+           display: flex;
+           flex-direction: row;
+           margin: 10px;
+           padding-top: 60px;
+        }
+    
+        .menu section{
+            border-radius: 10px;
+        }
+
+    .footer-menu{
+        margin-top: 50px;
     }
 }
 
