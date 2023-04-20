@@ -28,40 +28,63 @@
             </li>
         </ul>
     </nav>
-    <header>
-        <img src="../img/contenido/costilla.jpg" alt="costilla">
-    </header>
-    <main id="menu">
-        <section >
-            <h1>Menus</h1>
-            <table cellpading="30px" cellspacing="15px">
-                <tr>
-                    <th>Platos</th>
-                    <th>Incluye</th>
-                    <th>Precio</th>
-                </tr>
-                <tr>
-                    <td>Plato 1</td>
-                    <td>Papa</td>
-                    <td>100$</td>
-                </tr>
-                <tr>
-                    <td>Plato 2</td>
-                    <td>Carne</td>
-                    <td>200$</td>
-                </tr>
-                <tr>
-                    <td>Plato 3</td>
-                    <td>Carne y papa</td>
-                    <td>300$</td>
-                </tr>
-                <tr>
-                    <td>Plato 4</td>
-                    <td>Carne y Papa <br>con bebida incluida</td>
-                    <td>400$</td>
-                </tr>
-            </table>
+    <main class="menu">
+        <div class="botones-menu">
+            <form action="">
+                <input type="text" placeholder="buscar">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+            </form>
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+            </button>
+        </div>
+        <section class="section-menu">
+            <form>
+                <select name="categorias">
+                    <option>Categorias</option>
+                    <option value="al-plato">Al plato</option>
+                    <option value="en-pan">En pan</option>
+                    <option value="para-llevar">Para llevar</option>
+                </select>
+                <span><b>Menues</b></span>
+                <ul>
+                    <li>
+                        <a href="#">Carnes</a>
+                    </li>
+                    <li>
+                        <a href="#">Pastas</a>
+                    </li>
+                    <li>
+                        <a href="#">Pizzas</a>
+                    </li>
+                    <li>
+                        <a href="#">Empanadas</a>
+                    </li>
+                </ul>
         </section>
+        <section class="plato1">
+            <img src="../img/contenido/pastas.jpg" alt="pastas" class="menu-img">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti architecto quod adipisci temporibus distinctio, dignissimos quidem quam nobis, repellendus quibusdam a et ea sint voluptas sunt cupiditate sit quaerat eveniet?</p>
+        </section>
+        <section class="plato2">
+            <img src="../img/contenido/costilla.jpg" alt="costilla" class="menu-img">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti architecto quod adipiscaaaaaaa</p>
+        </section>
+        <section class="plato3">
+            <img src="../img/contenido/empanadas2.jpg" alt="empanadas" class="menu-img">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti architecto quod adipiscaaaaaaa</p>      
+        </section>
+        <section class="plato4">
+            <img src="../img/contenido/pizza.jpg" alt="pizza" class="menu-img">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti architecto quod adipiscaaaaaaa</p>         
+        </section>
+            <br>
     </main>
     <footer>
         <a href="https://www.instagram.com" target="_blank" class="bi bi-facebook"></i>
