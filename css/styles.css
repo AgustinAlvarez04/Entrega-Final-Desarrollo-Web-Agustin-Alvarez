@@ -14,7 +14,7 @@ body{
 }
 
 p{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
@@ -33,7 +33,7 @@ h3{
 }
 
 nav{
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgb(0, 0, 0);
     background-position: 20%;
     padding: 10px 60px;
     height: auto;
@@ -98,6 +98,21 @@ footer{
     text-align: center;
     line-height: 2;
 }
+
+.nav-boostrap{
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+    .nav-boostrap img{
+        width: 200px;
+    }
+
+    .nav-boostrap li a{
+        color: white;
+        text-decoration: none;
+    }
+    
+
 @media (min-width:768px) and (max-width:1600px){
 	.contacto-header img{
 		margin-left: 400px;
@@ -109,14 +124,22 @@ footer{
 
 #intro{
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: rgba(0, 0, 0, 0.678);
     padding: 10px 60px;
     height: auto;
 }
+    #intro p{
+        color: white;
+    }
+
 .menu-img{
     width: 310px;
     height: 310px;
 }
+.menu p{
+    color: white;
+}
+
 .section-menu{
     padding: 0 20px 30px 30px;
 }
@@ -198,6 +221,7 @@ footer{
        display: flex;
        flex-direction: row;
        justify-content: center;
+       align-items: center;
        
     }  
 
