@@ -1,4 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap");
+@keyframes animacion {
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: rgb(255, 172, 172);
+  }
+  50% {
+    background-color: rgb(255, 120, 120);
+  }
+  75% {
+    background-color: rgb(248, 78, 78);
+  }
+  100% {
+    background-color: rgb(255, 0, 0);
+  }
+}
+@keyframes textAnimacion {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.scale:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.transform:hover {
+  transform: translate(50px 20px);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.animacion {
+  animation-name: animacion;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+h1 {
+  animation-name: textAnimacion;
+  animation-duration: 5s;
+}
+
 .nav-boostrap {
   background-color: rgb(0, 0, 0);
   text-decoration: none;
@@ -116,55 +165,6 @@ footer div a:hover {
 
 .degrade {
   background: linear-gradient(to right, red, orangered);
-}
-
-.scale:hover {
-  transform: scale(1.1);
-  transition: all 1s;
-  cursor: pointer;
-}
-
-.transform:hover {
-  transform: translate(50px 20px);
-  transition: all 1s;
-  cursor: pointer;
-}
-
-@keyframes animacion {
-  0% {
-    background-color: white;
-  }
-  25% {
-    background-color: rgb(255, 172, 172);
-  }
-  50% {
-    background-color: rgb(255, 120, 120);
-  }
-  75% {
-    background-color: rgb(248, 78, 78);
-  }
-  100% {
-    background-color: rgb(255, 0, 0);
-  }
-}
-.animacion {
-  animation-name: animacion;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes textAnimacion {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-h1 {
-  animation-name: textAnimacion;
-  animation-duration: 5s;
 }
 
 #intro {
@@ -287,84 +287,6 @@ h1 {
     align-items: center;
     line-height: 22px;
     line-height: 2;
-  }
-}
-#contacto {
-  background-color: rgba(0, 0, 0, 0.63);
-  color: rgb(255, 255, 255);
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  line-height: 2;
-}
-
-@media (min-width: 768px) and (max-width: 1600px) {
-  .contacto-header img {
-    margin-left: 400px;
-  }
-}
-@media (width < 768px) {
-  .contacto-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr;
-    grid-template-areas: "nav" "header" "main" "footer";
-  }
-  .contacto-grid .contacto-nav {
-    grid-area: nav;
-  }
-  .contacto-grid .contacto-header {
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .contacto-grid .contacto-main {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 4px;
-  }
-  .contacto-grid .contacto-footer {
-    grid-area: "footer";
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 10px;
-    width: auto;
-    padding: 10px;
-    border-radius: 4px;
-  }
-  nav {
-    justify-content: center;
-  }
-  nav ul li {
-    display: none;
-  }
-  .contacto-main label {
-    justify-content: center;
-    margin-top: 20px;
-    font-size: 25px;
-  }
-  .contacto-main input[type=text],
-  .contacto-main input[type=email],
-  .contacto-main input[type=number],
-  .contacto-main textarea {
-    border-radius: 5px;
-    font-size: 20px;
-  }
-  .contacto-main input[type=reset],
-  .contacto-main input[type=submit] {
-    font-size: 20px;
-    width: 150px;
-    height: 30px;
-    border-radius: 50px;
   }
 }
 .menu-img {
