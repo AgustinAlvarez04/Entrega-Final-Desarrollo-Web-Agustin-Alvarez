@@ -9,7 +9,7 @@
 }
 
 .nav-boostrap li a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -104,11 +104,6 @@ footer {
 footer div a:hover {
   width: 20px;
   color: white;
-}
-
-.position {
-  width: 317px;
-  height: 350px;
 }
 
 .bg-orangered {
@@ -369,7 +364,7 @@ footer div a:hover {
 .botones-menu button {
   margin-left: 10px;
   background-color: rgb(221, 107, 0);
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 6px;
   border: none;
   border-radius: 3px;
