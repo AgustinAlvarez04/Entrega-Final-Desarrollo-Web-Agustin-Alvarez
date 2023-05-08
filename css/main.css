@@ -288,6 +288,8 @@ footer div a:hover {
 @media (width < 480px) {
   .header--img {
     background-image: url(../img/calden.jfif);
+    background-repeat: no-repeat;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
