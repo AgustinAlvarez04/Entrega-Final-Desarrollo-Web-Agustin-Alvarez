@@ -61,18 +61,31 @@
     background-color: rgb(243, 245, 245);
 }
 
+.menu .h1-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .menu{
     display: grid;
     grid-template-columns:20% repeat(2,1fr);
     grid-template-rows: 80px repeat(4,300px);
     gap: 5px;
-    grid-template-areas: 
-    "botones botones botones"
+    grid-template-areas:
+    "h1 h1 botones"
     "section uno uno"
     "section dos dos"
     "section tres tres"
     "section cuatro cuatro";
 }
+    .menu .h1-menu{
+        grid-area: h1;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin: 10px;
+    }
     .menu .botones-menu{
         padding: 0 30px;
         grid-area: botones;
@@ -225,16 +238,21 @@
         grid-template-rows: 20%;
         gap:5px;
         grid-template-areas:
+        "h1 h1 h1"
         "plato1 p-platos p-platos"
         "plato2 p-platos p-platos"
         "plato3 p-platos p-platos"
         "plato4 p-platos p-platos";
     }
-    
-        .menu .botones-menu{
-            display: none;
+        .menu .h1-menu{
+            grid-area: h1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 10px;
         }
-
+    
+        .menu .botones-menu,
         .menu .section-menu{
             display: none;
         }
@@ -252,7 +270,6 @@
             display: flex;
             flex-direction: row;
             margin: 10px;
-            padding-top: 100px;
             width: 480px;
             height: 250px; 
         }
@@ -262,7 +279,7 @@
             display: flex;
             flex-direction: row;
             margin: 10px;
-            padding-top: 245px;
+            padding-top: 150px;
             width: 480px;
             height: 100px; 
         }
@@ -272,7 +289,8 @@
             display: flex;
             flex-direction: row;
             margin: 10px;
-            padding-top: 280px;
+            padding-top: 290px;
+            
             width: 480px;
             height: 200px; 
         }
@@ -282,9 +300,12 @@
             display: flex;
             flex-direction: row;
             margin: 10px;
-            padding-top: 280px;
+            padding-top: 290px;
             width: 480px;
             height: 200px; 
         } 
+    .footer-menu{
+        margin-top: 310px;
+    }
 }
 
