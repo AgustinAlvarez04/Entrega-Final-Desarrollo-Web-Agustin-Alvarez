@@ -1,6 +1,9 @@
 *{
     $mainFont: 'Edu NSW ACT Foundation', cursive;
     box-sizing: border-box;
+    footer{
+        @include footer(flex,space-between)
+    }
 }
 
 body{

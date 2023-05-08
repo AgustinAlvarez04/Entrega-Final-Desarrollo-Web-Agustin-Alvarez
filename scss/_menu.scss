@@ -144,9 +144,6 @@
     margin-top: 60px;
 }
 
-
-
-
 @media (width < 768px){
     .menu{
         display: grid;
@@ -173,7 +170,9 @@
         display: flex;
         flex-direction: row;
         margin: 10px;
-        padding-bottom: 30px;     
+        padding-bottom: 30px;
+        width: 720px;
+        height: 350px;     
         }  
 
         .menu .p-platos p{
@@ -186,7 +185,8 @@
             display: flex;
             flex-direction: row;
             margin: 10px;
-            
+            width: 700px;
+            height: 320px; 
         }
 
         .menu .plato3{
@@ -194,7 +194,9 @@
         display: flex;
         flex-direction: row;
         margin: 10px;
-        padding-top: 30px; 
+        padding-top: 30px;
+        width: 700px;
+        height: 350px; 
         }
 
         .menu .plato4{
@@ -203,7 +205,8 @@
         flex-direction: row;
         margin: 10px;
         padding-top: 60px;
-        
+        width: 720px;
+        height: 350px; 
         }
 
         .menu section{
@@ -211,6 +214,77 @@
         }
 
     .footer-menu{
-        margin-top: 50px;
+        margin-top: 150px;
     }
 }
+
+@media (width < 480px){
+    .menu{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 20%;
+        gap:5px;
+        grid-template-areas:
+        "plato1 p-platos p-platos"
+        "plato2 p-platos p-platos"
+        "plato3 p-platos p-platos"
+        "plato4 p-platos p-platos";
+    }
+    
+        .menu .botones-menu{
+            display: none;
+        }
+
+        .menu .section-menu{
+            display: none;
+        }
+
+        .menu .p-platos{
+            grid-area: p-platos;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .menu .plato1{
+            grid-area: plato1;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding-top: 100px;
+            width: 480px;
+            height: 250px; 
+        }
+
+        .menu .plato2{
+            grid-area: plato2;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding-top: 245px;
+            width: 480px;
+            height: 100px; 
+        }
+
+        .menu .plato3{
+            grid-area: plato3;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding-top: 280px;
+            width: 480px;
+            height: 200px; 
+        }
+
+        .menu .plato4{
+            grid-area: plato4;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding-top: 280px;
+            width: 480px;
+            height: 200px; 
+        } 
+}
+

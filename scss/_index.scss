@@ -1,11 +1,11 @@
 #intro{
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.678);
+    background-color: $colorSecundario;
     padding: 10px 60px;
     height: auto;
 }
     #intro p{
-        color: white;
+        color: $textoBlanco;
     }
 
 .header--img{
@@ -21,9 +21,8 @@
         grid-area: pastas;
         width: 330px;
         height: 330px;
-    }   
+    }  
 
-    
     .header--img .costilla{
         grid-area: costilla;
         width: 330px;
@@ -113,13 +112,22 @@
         padding: 10px;
         border-radius: 4px;
     }
-    footer{
-        background-color: black;
+}
+
+@media (width < 480px){
+    .header--img{
+        background-image: url(../img/calden.jfif);
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        line-height: 22px;
-        line-height: 2;
+        border-radius: 5px;
+    }
+
+    .header--img .costilla,
+    .header--img .empanadas,
+    .header--img .pastas,
+    .header--img .costilla{
+        display: none;
     }
 }

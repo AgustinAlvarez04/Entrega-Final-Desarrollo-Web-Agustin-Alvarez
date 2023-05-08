@@ -1,5 +1,5 @@
 .nav-boostrap{
-    background-color: rgb(0, 0, 0);
+    background-color: $colorSecundario;
     text-decoration: none;
 }
     .nav-boostrap img{
@@ -7,12 +7,13 @@
     }
 
     .nav-boostrap li a{
-        color: rgb(255, 255, 255);
+        color: $textoBlanco;
         text-decoration: none;
     }
 
+
 nav{
-    background-color: rgb(0, 0, 0);
+    background-color: $colorSecundario;
     background-position: 20%;
     padding: 10px 60px;
     height: auto;
@@ -32,7 +33,7 @@ nav{
             margin-right: 10px;
         }
             nav ul li a{
-                color: rgb(255, 255, 255);
+                color: $textoBlanco;
                 text-align: right;
                 text-decoration: none;
                 font-family: 'Edu NSW ACT Foundation', cursive;
