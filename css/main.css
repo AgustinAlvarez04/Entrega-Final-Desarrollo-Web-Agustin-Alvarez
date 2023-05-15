@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap");
-@keyframes animacion {
+@keyframes animacionColor {
   0% {
     background-color: white;
   }
@@ -44,6 +44,11 @@
 }
 
 h1 {
+  animation-name: textAnimacion;
+  animation-duration: 5s;
+}
+
+nav div div ul li a {
   animation-name: textAnimacion;
   animation-duration: 5s;
 }
@@ -168,8 +173,12 @@ footer div a:hover {
   color: orangered;
 }
 
-.degrade {
-  background: linear-gradient(to right, red, orangered);
+.degrades {
+  background: linear-gradient(to right, rgb(255, 0, 0), rgba(255, 68, 0, 0.575));
+}
+
+.hover:hover {
+  color: orangered;
 }
 
 #intro {

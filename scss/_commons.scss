@@ -67,7 +67,10 @@ footer{
     color: $textoFooter;
 }
 
-.degrade{
-    background: linear-gradient(to right, red, orangered);
+.degrades{
+    background: linear-gradient(to right, rgb(255, 0, 0), rgba(255, 68, 0, 0.575));
 }
 
+.hover:hover{
+    color: orangered
+}

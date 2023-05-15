@@ -1,4 +1,4 @@
-@keyframes animacion{
+@keyframes animacionColor{
     0%{background-color: white;}
     25%{background-color: rgb(255, 172, 172);}
     50%{background-color: rgb(255, 120, 120);}
@@ -31,6 +31,11 @@
 }
 
 h1{
+    animation-name: textAnimacion;
+    animation-duration: 5s;
+}
+
+nav div div ul li a{
     animation-name: textAnimacion;
     animation-duration: 5s;
 }
