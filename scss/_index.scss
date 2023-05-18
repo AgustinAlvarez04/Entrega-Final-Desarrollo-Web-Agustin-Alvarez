@@ -17,25 +17,25 @@
     grid-template-areas: 
     "pastas costilla pizza empanadas";
 }
-    .header--img .pastas{
+    .pastas{
         grid-area: pastas;
         width: 330px;
         height: 330px;
     }  
 
-    .header--img .costilla{
+    .costilla{
         grid-area: costilla;
         width: 330px;
         height: 330px;
     }
     
-    .header--img .pizza{
+    .pizza{
         grid-area: pizza;
         width: 330px;
         height: 330px;
     }
     
-    .header--img .empanadas{
+    .empanadas{
         grid-area: empanadas;
         width: 330px;
         height: 330px;
@@ -51,14 +51,14 @@
         "pastas costilla"
         "empanadas pizza";
     }
-        .header--img .pastas{
+        .pastas{
             grid-area: pastas;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
         }
-        .header--img .costilla{
+        .costilla{
             grid-area: costilla;
             display: flex;
             flex-direction: column;
@@ -66,37 +66,37 @@
             justify-content: center;
             
         }
-        .header--img .pizza{
+        .pizza{
             grid-area: "pizza";
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
         }
-        .header--img .empanadas{
+        .empanadas{
             grid-area: "empanadas";
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
         }
-        .header--img .pastas{
+        .pastas{
             width: 380px;
             height: 330px;
             margin-left: 250px;
         }
-        .header--img .costilla{
+        .costilla{
             width: 330px;
             height: 330px;
             margin-left: 250px;
         }
-        .header--img .pizza{
+        .pizza{
             width: 330px;
             height: 330px;
             margin-top: 250px;
             margin-left: 250px;
         }
-        .header--img .empanadas{
+        .empanadas{
             width: 380px;
             height: 330px;
             margin-top: 250px;
