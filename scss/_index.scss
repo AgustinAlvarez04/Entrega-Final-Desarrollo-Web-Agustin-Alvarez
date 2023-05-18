@@ -8,6 +8,10 @@
         color: $textoBlanco;
     }
 
+footer{
+    @include footer(flex,space-between)
+}
+
 .header--img{
     display: grid;
     column-gap: 2.5px;
@@ -128,7 +132,7 @@
 
     .header--img .costilla,
     .header--img .empanadas,
-    .header--img .pastas{
+    .header--img .pastas,{
         display: none;
     }
 }

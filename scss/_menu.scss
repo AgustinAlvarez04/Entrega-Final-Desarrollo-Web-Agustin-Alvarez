@@ -6,6 +6,10 @@
     color: white;
 }
 
+footer{
+    @include footer(flex,space-between)
+}
+
 .section-menu{
     padding: 0 20px 30px 30px;
 }

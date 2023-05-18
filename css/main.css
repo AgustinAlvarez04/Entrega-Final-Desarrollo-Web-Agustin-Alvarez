@@ -105,15 +105,11 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
+  color: red;
 }
 
 * {
   box-sizing: border-box;
-}
-* footer {
-  background-color: black;
-  display: flex;
-  flex-direction: space-between;
 }
 
 body {
@@ -181,10 +177,21 @@ footer div a:hover {
   background: linear-gradient(to right, rgb(255, 0, 0), rgba(255, 68, 0, 0.575));
 }
 
-.hover:hover {
-  color: orangered;
+a {
+  color: white;
+}
+a:hover {
+  color: red;
 }
 
+@media (width < 480px) {
+  .titleContacto {
+    font-size: 20px;
+  }
+  .textoContacto {
+    font-size: 11px;
+  }
+}
 #intro {
   text-align: center;
   background-color: black;
@@ -194,6 +201,12 @@ footer div a:hover {
 
 #intro p {
   color: white;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: space-between;
 }
 
 .header--img {
@@ -322,6 +335,12 @@ footer div a:hover {
 
 .menu p {
   color: white;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: space-between;
 }
 
 .section-menu {
